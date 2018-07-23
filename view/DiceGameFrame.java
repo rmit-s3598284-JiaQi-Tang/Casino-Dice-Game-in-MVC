@@ -64,26 +64,6 @@ public class DiceGameFrame {
 	private HowToPlayFrame howToPlayFrame;
 	private SetDelayFrame setDelayFrame;
 
-	public HowToPlayFrame getHowToPlayFrame() {
-		return howToPlayFrame;
-	}
-
-	public void setHowToPlayFrame(HowToPlayFrame howToPlayFrame) {
-		this.howToPlayFrame = howToPlayFrame;
-	}
-
-	public SetDelayFrame getSetDelayFrame() {
-		return setDelayFrame;
-	}
-
-	public void setSetDelayFrame(SetDelayFrame setDelayFrame) {
-		this.setDelayFrame = setDelayFrame;
-	}
-
-	public DiceGameFrame(GameEngine gameEngine) {
-		this.gameEngine = gameEngine;
-	}
-
 	public void showDiceGameFrame() {
 		mainFrame = new JFrame("Welcome to Casino Dice Game !");
 		placeBetButton = new JButton("Place Bet");
@@ -493,4 +473,25 @@ public class DiceGameFrame {
 	public void setExitMenuItem(JMenuItem exitMenuItem) {
 		this.exitMenuItem = exitMenuItem;
 	}
+	
+	public HowToPlayFrame getHowToPlayFrame() {
+		return howToPlayFrame;
+	}
+
+	public void setHowToPlayFrame(HowToPlayFrame howToPlayFrame) {
+		this.howToPlayFrame = howToPlayFrame;
+	}
+
+	public SetDelayFrame getSetDelayFrame() {
+		return setDelayFrame;
+	}
+
+	public void setSetDelayFrame(SetDelayFrame setDelayFrame) {
+		this.setDelayFrame = setDelayFrame;
+	}
+
+	public DiceGameFrame(GameEngine gameEngine) {
+		this.gameEngine = gameEngine;
+	}
+
 }
